@@ -1,0 +1,252 @@
+ /*to control all font style*/
+ body {
+  font-family:"proxima-soft", "Proxima Soft", "Proxima Nova Soft", Helvetica, Arial, sans-serif;
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh; /* to control footer*/
+  color:gray;
+}
+
+/*control title design, I use gradient text method*/
+h1 {
+  text-align: center;
+  color: 	#4F7942;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+  /*control for paragraph tag*/
+p {
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+
+/*control for celcius text above input box*/
+.js-celcius {
+  color:#5F9EA0;
+  font-size: 20px;
+}
+
+.js-unit-celcius {
+  font-size: 20px;
+  margin:0;
+  display:flex;
+  justify-content: flex-start;
+}
+
+.js-unit-fahrenheit {
+  font-size: 20px;
+  margin:0;
+}
+
+/*control for fahrenheit text above input box*/
+.js-fahrenheit {
+  color:#5F9EA0;
+  font-size: 20px;
+}
+
+/*control input box design*/
+.js-input-value {
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  border: solid black;
+  color: gray;
+  font-size: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.30);
+  border-radius: 10px;
+}
+
+/*control reverse button design*/
+.js-reverse-button {
+  margin-right: 10px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  background-color:#5F9EA0;
+  border:none;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity, 0.15s;
+  font-size: 16px;
+}
+
+/*control reset button design*/
+.reset-button {
+  margin-top: 20px;
+  background-color: #5F9EA0;
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: opacity, 0.15s;
+  font-size: 16px;
+  margin-left:0;
+  margin-right:10px;
+}
+
+/*control pseudo button for reset button*/
+.reset-button:hover {
+  opacity: 0.6;
+}
+.reset-button:active {
+  opacity: 0.2;
+}
+
+/*control konversi button design */
+.calculate-button {
+  margin-left: 50px;
+  background-color: #5F9EA0;
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: opacity, 0.15s;
+  font-size: 16px;
+  margin-right:0;
+  margin-left:10px;
+}
+
+/*control pseudo button for calculate button*/
+.calculate-button:hover {
+  opacity: 0.6;
+}
+.calculate-button:active {
+  opacity: 0.2;
+}
+
+/*to control calculation area design*/
+.calculation-area {
+  width: 400px;
+  height: 150px;
+  text-align: center;
+  border: solid black;
+  border-radius: 3px;
+  color: gray;
+  font-size: 16px;
+  transition: padding, 0.3s;
+}
+
+/*control pseudo button for calculation area*/
+.calculation-area:hover {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*to control shortcut link for reverse temperature*/
+.shortcut-button {
+  cursor: pointer;
+  color: #009FFF;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: font, 0.3s, color, 0.3s;
+  font-size: 14px;
+}
+
+/*to control pseudo button for shortcut link for reverse temperature*/
+.shortcut-button:hover {
+  font-size: 16px;
+  color: #ec2F4B;
+}
+
+
+/*to control size of text in paragraph below*/
+.size-big {
+  font-size: 20px;
+}
+
+/*to control text "calculation"*/
+.calculation-text{
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+/*to control output box design*/
+.js-output-button {
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  border: none;
+  border: solid black;
+  color: gray;
+  font-size: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.30);
+  border-radius: 10px;
+}
+
+/*to control placeholder design*/
+::placeholder {
+  color:black;
+  opacity:0.5;
+  font-size: 13px;
+}
+
+/*to control the underline section*/
+u {
+margin-top: 40px;
+font-size: 20px;
+}
+
+header {
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+/*to control section from command text until explanation area*/
+.container {
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+
+} 
+
+/*to control special section only from command text untul reset and konversi button*/
+.section2{
+display:flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+/*to control special section only from calculation text until shortcut link text.*/
+.section3 {
+display:flex;
+flex-direction: column;
+align-items: center;
+}
+
+/*to control special section only for how to convert from one temperature to other.*/
+.section4 {
+display:flex;
+flex-direction:column;
+align-items: center;
+}
+
+/*to control footer design*/
+footer {
+  color: black;
+  text-align: center;
+  font-size: 14px;
+  bottom: 0;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-end;
+  margin-top:auto;
+}
+
+/*to control linkedIn link design*/
+a {
+  color:rgb(29, 158, 223);
+}

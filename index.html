@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Calculator</title>
+
+<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <!--header text / title-->
+  <header>
+    <h1>
+      Temperature Conversion
+    </h1>
+  </header>
+
+
+
+  <!--this section represent from text command until "Reset and "Konversi" button, &deg; =>>> html entity-->
+<div class="container">
+
+  <section class="section2">
+    <div style="
+      display:flex;
+      font-style:italic;
+      margin-bottom: 10px;
+      ">
+      Enter the temperature in degrees Celcius or Fahrenheit and click the button to convert it to the other unit.
+    </div>
+    <div class="js-celcius" style="margin-right:15px; font-weight:bold;">
+      Celcius
+    </div>
+    <div>
+      <input placeholder="Please input temperature" class="js-input-value"> 
+    <p class="js-unit-celcius" style="display:inline-block;">&deg;C</p>
+    </div>
+    
+    <div>
+    <button class="js-reverse-button" onclick=
+      "
+      showExplanationBox();
+      Reverse();
+      showCalculation();
+      " title="Revese">↑↓</button>
+    </div>
+
+    <!--title="Reverse" berfungsi agar saat mouse kita hover ke icon reverse, akan muncul tulisan reverse"-->
+
+    <div class="js-fahrenheit" style="margin-right:15px; font-weight:bold;">
+      Fahrenheit
+    </div>
+    
+    <div>
+      <input placeholder="Conversion result" class="js-output-button"><span class="js-unit-fahrenheit" style="display:inline-block;
+      margin-left: 2px;">&deg;F</span>
+    </div>
+
+  <Section style="
+  margin-right: 15px;
+  ">
+    <div>
+      <button class="reset-button" onclick="
+      Reset();
+        ">Reset
+      </button>
+      
+      <button class="calculate-button" onclick="
+      showExplanationBox();
+      calculateTemperature();
+      showCalculation();
+      ">Konversi</button>
+    </div>
+  </Section>
+  </section>
+
+  <!--this section represent about explanation on how to calculate/convert from Celcius to Fahrenheit, vice versa.-->
+  <section class="js-show-calculation"></section>
+</div>
+
+  <!--this section represent calculation area and shortcut link for reverse temperature-->
+  <section class="js-explanation-area"></section>
+
+  <!--this footer is used to design the footer and put linkedin anchor-->
+  <footer>
+    <span style="
+    display:flex;
+    color:rgb(221, 209, 209);
+    border: 0.5px dashed gray;
+    padding: 5px;
+    position: absolute;
+    ;">
+      Here some shortcuts for you!
+      <br>
+      Delete key = Reset
+      <br>
+      Enter key = Konversi</span>
+    </span>
+
+    <div>Copyright &copy; 2023 Temperature Calculator</div>
+    <div>All rights reserved.</div>
+    <div>Designed by Nico Pradipta</div>
+    <a href="https://www.linkedin.com/in/nico-pradipta/" target="_blank">LinkedIn</a>
+  </footer>
+
+</body>
+<script src="./js/script.js"></script>
+</html>
